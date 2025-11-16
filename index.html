@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Cursed Errors - Make Error Handling Fun Again ⚡✨</title>
+    <meta name="description" content="A Visual Studio Code extension that adds magical curse and purify effects when errors occur and are resolved. Transform debugging into an engaging experience.">
+    <meta name="keywords" content="vscode, extension, error handling, visual effects, animation, cursed errors, debugging, developer tools">
+    <meta name="author" content="kpab">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kpab.github.io/cursed-errors-page/">
+    <meta property="og:title" content="Cursed Errors - Make Error Handling Fun Again">
+    <meta property="og:description" content="A VS Code extension with magical curse and purify effects for error handling">
+    <meta property="og:image" content="https://kpab.github.io/cursed-errors-page/assets/icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kpab.github.io/cursed-errors-page/">
+    <meta property="twitter:title" content="Cursed Errors - Make Error Handling Fun Again">
+    <meta property="twitter:description" content="A VS Code extension with magical curse and purify effects for error handling">
+    <meta property="twitter:image" content="https://kpab.github.io/cursed-errors-page/assets/icon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+
+    <!-- Particle Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <img src="assets/icon.png" alt="Cursed Errors Icon" class="floating">
+                    <div class="glow-effect"></div>
+                </div>
+                <h1 class="hero-title" data-en="Cursed Errors" data-ja="Cursed Errors">Cursed Errors</h1>
+                <p class="hero-subtitle" data-en="Transform debugging into an engaging visual experience ⚡✨" data-ja="デバッグを魅力的なビジュアル体験に変える ⚡✨">
+                    Transform debugging into an engaging visual experience ⚡✨
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=kpab.cursed-errors" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span data-en="Install on VS Code" data-ja="VS Codeにインストール">Install on VS Code</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kpab/cursed-errors" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/>
+                        </svg>
+                        <span data-en="View on GitHub" data-ja="GitHubで見る">View on GitHub</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label" data-en="Themes" data-ja="テーマ">Themes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label" data-en="Emoji Effects" data-ja="絵文字エフェクト">Emoji Effects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label" data-en="Open Source" data-ja="オープンソース">Open Source</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-en="✨ Features" data-ja="✨ 機能">✨ Features</h2>
+            <div class="features-grid">
+                <div class="feature-card curse-theme">
+                    <div class="feature-icon">💀</div>
+                    <h3 data-en="Curse Effects" data-ja="呪いエフェクト">Curse Effects</h3>
+                    <p data-en="When errors appear, watch as your code gets dramatically cursed with glowing particles and emoji effects" data-ja="エラーが発生すると、コードが輝くパーティクルと絵文字エフェクトで劇的に呪われます">
+                        When errors appear, watch as your code gets dramatically cursed with glowing particles and emoji effects
+                    </p>
+                    <div class="feature-emojis">💀 ⚡ 😱 🔥 💥</div>
+                </div>
+
+                <div class="feature-card purify-theme">
+                    <div class="feature-icon">✨</div>
+                    <h3 data-en="Purify Effects" data-ja="浄化エフェクト">Purify Effects</h3>
+                    <p data-en="Fix errors and be rewarded with beautiful purification animations and celebratory particles" data-ja="エラーを修正すると、美しい浄化アニメーションと祝福のパーティクルで報われます">
+                        Fix errors and be rewarded with beautiful purification animations and celebratory particles
+                    </p>
+                    <div class="feature-emojis">✨ 🌟 💫 ⭐ 🎉</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-en="Multiple Themes" data-ja="複数のテーマ">Multiple Themes</h3>
+                    <p data-en="Choose from darkSmoke, purpleCurse, or cracks themes to match your style" data-ja="darkSmoke、purpleCurse、cracksテーマから選んで、あなたのスタイルに合わせましょう">
+                        Choose from darkSmoke, purpleCurse, or cracks themes to match your style
+                    </p>
+                    <div class="theme-samples">
+                        <div class="theme-dot darksmoke" title="darkSmoke"></div>
+                        <div class="theme-dot purplecurse" title="purpleCurse"></div>
+                        <div class="theme-dot cracks" title="cracks"></div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 data-en="Highly Customizable" data-ja="高度なカスタマイズ">Highly Customizable</h3>
+                    <p data-en="Adjust intensity, trigger levels, scope, and cooldown to your preference" data-ja="強度、トリガーレベル、スコープ、クールダウンをお好みに調整できます">
+                        Adjust intensity, trigger levels, scope, and cooldown to your preference
+                    </p>
+                    <div class="config-tags">
+                        <span class="tag">Intensity</span>
+                        <span class="tag">Triggers</span>
+                        <span class="tag">Scope</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 data-en="Performance Optimized" data-ja="パフォーマンス最適化">Performance Optimized</h3>
+                    <p data-en="Lightweight and efficient with configurable cooldowns to prevent effect spam" data-ja="軽量で効率的、設定可能なクールダウンでエフェクトスパムを防止">
+                        Lightweight and efficient with configurable cooldowns to prevent effect spam
+                    </p>
+                    <div class="perf-stat">Default: 300ms cooldown</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌈</div>
+                    <h3 data-en="Multi-line Coverage" data-ja="複数行カバレッジ">Multi-line Coverage</h3>
+                    <p data-en="Effects cover 3-7 lines based on intensity, creating an immersive experience" data-ja="強度に基づいて3〜7行をカバーし、没入感のある体験を生み出します">
+                        Effects cover 3-7 lines based on intensity, creating an immersive experience
+                    </p>
+                    <div class="coverage-range">3-7 lines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section class="themes-section">
+        <div class="container">
+            <h2 class="section-title" data-en="🎨 Choose Your Theme" data-ja="🎨 テーマを選択">🎨 Choose Your Theme</h2>
+            <div class="themes-showcase">
+                <div class="theme-card" data-theme="darksmoke">
+                    <div class="theme-preview darksmoke-preview">
+                        <div class="theme-particles">
+                            <span class="particle">💀</span>
+                            <span class="particle">⚡</span>
+                            <span class="particle">😱</span>
+                        </div>
+                    </div>
+                    <h3>darkSmoke</h3>
+                    <p data-en="Mysterious purple smoke effect" data-ja="神秘的な紫の煙エフェクト">Mysterious purple smoke effect</p>
+                    <div class="theme-color-bar darksmoke-bar"></div>
+                </div>
+
+                <div class="theme-card" data-theme="purplecurse">
+                    <div class="theme-preview purplecurse-preview">
+                        <div class="theme-particles">
+                            <span class="particle">👻</span>
+                            <span class="particle">💜</span>
+                            <span class="particle">⚡</span>
+                        </div>
+                    </div>
+                    <h3>purpleCurse</h3>
+                    <p data-en="Deep purple mystical curse" data-ja="深い紫の神秘的な呪い">Deep purple mystical curse</p>
+                    <div class="theme-color-bar purplecurse-bar"></div>
+                </div>
+
+                <div class="theme-card" data-theme="cracks">
+                    <div class="theme-preview cracks-preview">
+                        <div class="theme-particles">
+                            <span class="particle">💢</span>
+                            <span class="particle">⚡</span>
+                            <span class="particle">💥</span>
+                        </div>
+                    </div>
+                    <h3>cracks</h3>
+                    <p data-en="Intense red cracking effect" data-ja="激しい赤いひび割れエフェクト">Intense red cracking effect</p>
+                    <div class="theme-color-bar cracks-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="installation">
+        <div class="container">
+            <h2 class="section-title" data-en="⚡ Quick Start" data-ja="⚡ クイックスタート">⚡ Quick Start</h2>
+            <div class="install-steps">
+                <div class="install-step">
+                    <div class="step-number">1</div>
+                    <h3 data-en="Install Extension" data-ja="拡張機能をインストール">Install Extension</h3>
+                    <div class="code-block">
+                        <code>ext install cursed-errors</code>
+                        <button class="copy-btn" data-copy="ext install cursed-errors">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2z"/>
+                                <path d="M2 6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1v1a3 3 0 0 1-3 3H2a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h1v1H2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p data-en="or search 'Cursed Errors' in VS Code Extensions" data-ja="またはVS Code拡張機能で「Cursed Errors」を検索">
+                        or search 'Cursed Errors' in VS Code Extensions
+                    </p>
+                </div>
+
+                <div class="install-step">
+                    <div class="step-number">2</div>
+                    <h3 data-en="Configure Settings" data-ja="設定をカスタマイズ">Configure Settings</h3>
+                    <div class="code-block">
+                        <code>{
+  "cursedErrors.theme": "darkSmoke",
+  "cursedErrors.intensity": "medium"
+}</code>
+                    </div>
+                    <p data-en="Customize theme, intensity, and trigger levels" data-ja="テーマ、強度、トリガーレベルをカスタマイズ">
+                        Customize theme, intensity, and trigger levels
+                    </p>
+                </div>
+
+                <div class="install-step">
+                    <div class="step-number">3</div>
+                    <h3 data-en="Start Coding!" data-ja="コーディング開始！">Start Coding!</h3>
+                    <div class="emoji-demo">
+                        <span class="demo-emoji">💻</span>
+                        <span class="demo-arrow">→</span>
+                        <span class="demo-emoji">🔥</span>
+                        <span class="demo-arrow">→</span>
+                        <span class="demo-emoji">✨</span>
+                    </div>
+                    <p data-en="Watch the magic happen as you code" data-ja="コーディング中に魔法が起こるのを見てください">
+                        Watch the magic happen as you code
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section class="configuration">
+        <div class="container">
+            <h2 class="section-title" data-en="⚙️ Configuration Options" data-ja="⚙️ 設定オプション">⚙️ Configuration Options</h2>
+            <div class="config-grid">
+                <div class="config-item">
+                    <h4>cursedErrors.enable</h4>
+                    <div class="config-type">boolean</div>
+                    <p data-en="Enable or disable the extension" data-ja="拡張機能を有効化または無効化">Enable or disable the extension</p>
+                    <div class="config-default">Default: <code>true</code></div>
+                </div>
+
+                <div class="config-item">
+                    <h4>cursedErrors.intensity</h4>
+                    <div class="config-type">low | medium | high</div>
+                    <p data-en="Control the intensity of effects" data-ja="エフェクトの強度を制御">Control the intensity of effects</p>
+                    <div class="config-default">Default: <code>medium</code></div>
+                </div>
+
+                <div class="config-item">
+                    <h4>cursedErrors.theme</h4>
+                    <div class="config-type">darkSmoke | purpleCurse | cracks</div>
+                    <p data-en="Choose your visual theme" data-ja="ビジュアルテーマを選択">Choose your visual theme</p>
+                    <div class="config-default">Default: <code>darkSmoke</code></div>
+                </div>
+
+                <div class="config-item">
+                    <h4>cursedErrors.triggerLevel</h4>
+                    <div class="config-type">errorOnly | errorAndWarning | all</div>
+                    <p data-en="Set when effects should trigger" data-ja="エフェクトをトリガーするタイミングを設定">Set when effects should trigger</p>
+                    <div class="config-default">Default: <code>errorOnly</code></div>
+                </div>
+
+                <div class="config-item">
+                    <h4>cursedErrors.scope</h4>
+                    <div class="config-type">activeEditor | allEditors</div>
+                    <p data-en="Apply effects to active or all editors" data-ja="アクティブまたは全エディタにエフェクトを適用">Apply effects to active or all editors</p>
+                    <div class="config-default">Default: <code>activeEditor</code></div>
+                </div>
+
+                <div class="config-item">
+                    <h4>cursedErrors.cooldownMs</h4>
+                    <div class="config-type">number</div>
+                    <p data-en="Cooldown time between effects (ms)" data-ja="エフェクト間のクールダウン時間（ミリ秒）">Cooldown time between effects (ms)</p>
+                    <div class="config-default">Default: <code>300</code></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Make Error Handling Fun?" data-ja="エラーハンドリングを楽しくする準備はできましたか？">
+                    Ready to Make Error Handling Fun?
+                </h2>
+                <p data-en="Join developers who transform their debugging experience" data-ja="デバッグ体験を変革する開発者の仲間に加わりましょう">
+                    Join developers who transform their debugging experience
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=kpab.cursed-errors" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <span data-en="Install Now" data-ja="今すぐインストール">Install Now</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kpab/cursed-errors" class="btn btn-outline btn-large" target="_blank" rel="noopener noreferrer">
+                        <span data-en="Star on GitHub" data-ja="GitHubでスター">Star on GitHub</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="assets/icon.png" alt="Cursed Errors" width="32" height="32">
+                        <span>Cursed Errors</span>
+                    </div>
+                    <p data-en="Make error handling fun again ⚡✨" data-ja="エラーハンドリングを再び楽しく ⚡✨">
+                        Make error handling fun again ⚡✨
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 data-en="Resources" data-ja="リソース">Resources</h4>
+                        <a href="https://github.com/kpab/cursed-errors" target="_blank" rel="noopener noreferrer" data-en="Documentation" data-ja="ドキュメント">Documentation</a>
+                        <a href="https://github.com/kpab/cursed-errors/blob/main/QUICKSTART.md" target="_blank" rel="noopener noreferrer" data-en="Quick Start" data-ja="クイックスタート">Quick Start</a>
+                        <a href="https://github.com/kpab/cursed-errors/blob/main/EFFECTS_DEMO.md" target="_blank" rel="noopener noreferrer" data-en="Effects Demo" data-ja="エフェクトデモ">Effects Demo</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-en="Community" data-ja="コミュニティ">Community</h4>
+                        <a href="https://github.com/kpab/cursed-errors" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://github.com/kpab/cursed-errors/issues" target="_blank" rel="noopener noreferrer" data-en="Issues" data-ja="課題">Issues</a>
+                        <a href="https://github.com/kpab/cursed-errors/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-en="License (MIT)" data-ja="ライセンス (MIT)">License (MIT)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cursed Errors. <span data-en="Made with" data-ja="愛を込めて">Made with</span> 💜 <span data-en="by" data-ja="">by</span> kpab</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

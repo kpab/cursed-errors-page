@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kpab.github.io/cursed-errors-page/sitemap.xml
