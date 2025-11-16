@@ -1,0 +1,34 @@
+# GitHub Pages SEO Configuration
+title: Cursed Errors - Make Error Handling Fun Again
+description: A Visual Studio Code extension that adds magical curse and purify effects when errors occur and are resolved. Transform debugging into an engaging experience.
+url: https://kpab.github.io
+baseurl: /cursed-errors-page
+
+# Author information
+author:
+  name: kpab
+  url: https://github.com/kpab
+
+# SEO settings
+lang: en_US
+twitter:
+  card: summary_large_image
+
+# Social profiles
+social:
+  links:
+    - https://github.com/kpab
+    - https://github.com/kpab/cursed-errors
+    - https://marketplace.visualstudio.com/items?itemName=kpab.cursed-errors
+
+# Plugins for SEO
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .git
+  - .nojekyll
